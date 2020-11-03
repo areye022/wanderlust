@@ -1,10 +1,5 @@
-const { connect } = require("./connection");
 var connection= require("./connection");
 
-function questions(num){
-    var arr= [];
-
-}
 // creating a selectAll(), insertOne(), updateOne(),
 var orm= {
     selectAll:function(input,cb){
@@ -30,3 +25,5 @@ var orm= {
     // updateOne: function()
 
 }
+
+module.exports= orm;
