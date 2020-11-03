@@ -1,0 +1,29 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "Travel Bucket-List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areye022/wanderlust.git"
+  },
+  "keywords": [
+    "travel",
+    "bucket-list",
+    "wanderlust"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/areye022/wanderlust/issues"
+  },
+  "homepage": "https://github.com/areye022/wanderlust#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
