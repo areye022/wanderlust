@@ -1,3 +1,4 @@
+<body>
 <h1>Wanderlust Trips</h1>
 
 <h2>Add a Destination</h2>
@@ -26,5 +27,28 @@
     </div>
 {{/each}}
 
+{{!-- <div>
+<h2>Travel Goals!</h2>
+<div>
+<ul>
+    {{#each trips}}
+        {{#unless traveled}}
+        {{> trips/trip-block data=false}}
+        {{/unless}}
+    {{/each}}
+</ul>
+</div>
 
+<h2>Places I've Traveled!</h2>
 
+<ul>
+    {{#each cats}}
+        {{#if traveled}}
+        {{> trips/trip-block data=true}}
+        {{/if}}
+    {{/each}}
+</ul>
+</div>
+ --}}
+ </body>
+ 
