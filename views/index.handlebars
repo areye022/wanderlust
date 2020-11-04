@@ -1,0 +1,28 @@
+<h1>Wanderlust Trips</h1>
+
+<h2>Add a Destination</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="ca">Destination:</label>
+        <input type="text" id="ca" name="name">
+    </div>
+
+    <button type="submit">Add</button>
+</form>
+
+
+{{#each trips}}
+    <div class="trip-container">
+        <div class= "planned">
+            {{trip_name}}
+        </div>
+            
+        <div class= "visited">
+            {{traveled}}
+        </div>
+    </div>
+{{/each}}
+
+
+
