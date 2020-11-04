@@ -12,7 +12,12 @@ var trip = {
             cb(res);
         })
     },
-    // updateOne:
+    // do with ashley
+    updateOne: function(objColVals, condition, cb) {
+        orm.updateOne("trips", objColVals, condition, function(res) {
+            cb(res);
+        });
+    }
 }
 
 module.exports= trip;

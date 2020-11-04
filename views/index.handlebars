@@ -8,7 +8,7 @@
         <input type="text" id="plan" name="name">
     </div>
 
-    <button type="submit">Add</button>
+    <button type="submit" class= "">Add</button>
 </form>
 
 
@@ -16,10 +16,12 @@
     <div class="trip-container">
         <div class= "planned">
             {{trip_name}}
+            <button class="destName" data-id="{{id}}">Visited</button>
         </div>
             
         <div class= "visited">
             {{traveled}}
+
         </div>
     </div>
 {{/each}}
