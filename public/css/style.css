@@ -3,6 +3,25 @@ body{
     background-size: cover;
 }
 
-h1{
+h1,h2{
     text-align: center;
 }
+
+form{
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    background-color: #FD7676;
+    opacity: 75%;
+    width:75%;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:15px;
+    padding-top:15px;
+    }
+
+.column {
+    flex: 50%;
+    }

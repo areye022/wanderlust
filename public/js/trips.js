@@ -20,11 +20,9 @@ $(function() {
         $(".create-form").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
-            alert("inside submit button")
         var newDestination = {
             trip_name: $("#plan").val().trim(),
         };
-    alert(newDestination);
         // Send the POST request.
         $.ajax("/api/trips", {
             type: "POST",

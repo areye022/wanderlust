@@ -7,37 +7,40 @@
     <div class="form-group">
         <label for="plan">Destination:</label>
         <input type="text" id="plan" name="name">
+        <button type="submit" class= "">Add</button>
     </div>
-
-    <button type="submit" class= "">Add</button>
 </form>
 
-
-{{#each trips}}
-    <div class="trip-container">
-        <div class= "planned">
+{{!-- {{#each trips}} --}}
+    <div id="trip-container" class="row" >
+        <div class= "column" id= "planned">
+            <ul>
+                {{#each trips}}
+                    {{#unless traveled}}
+                        {{> trips/trip-block data=false}}
+                    {{/unless}}
+                {{/each}}
+            </ul>
             {{trip_name}}
-            <button class="destName" data-id="{{id}}">Visited</button>
         </div>
             
-        <div class= "visited">
+        <div id= "visited" class="column">
             {{traveled}}
+            {{#each trips}}
+                    {{#unless traveled}}
+                        {{> trips/trip-block data=true}}
+                    {{/unless}}
+                {{/each}}
 
         </div>
     </div>
-{{/each}}
-</body>
+{{!-- {{/each}} --}}
 
-{{!-- <div>
+{{!-- 
+<div>
 <h2>Travel Goals!</h2>
 <div>
-<ul>
-    {{#each trips}}
-        {{#unless traveled}}
-        {{> trips/trip-block data=false}}
-        {{/unless}}
-    {{/each}}
-</ul>
+
 </div>
 
 <h2>Places I've Traveled!</h2>
@@ -49,7 +52,7 @@
         {{/if}}
     {{/each}}
 </ul>
-</div>
---}}
+</div> --}}
 
+</body>
 
