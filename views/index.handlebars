@@ -1,58 +1,49 @@
 <body>
-<h1>Wanderlust Trips</h1>
+<h1><i>Wanderlust Trips</i></h1>
+<h3><i>For those with a desire to travel the world and immerse themselves in new cultures.</i></h3>
 
-<h2>Add a Destination</h2>
 <form class="create-form">
 
     <div class="form-group">
-        <label for="plan">Destination:</label>
+        <label for="plan"><stong>Destination:</stong></label>
         <input type="text" id="plan" name="name">
         <button type="submit" class= "">Add</button>
     </div>
 </form>
 
-{{!-- {{#each trips}} --}}
-    <div id="trip-container" class="row" >
+<br>
+{{!-- columns for those traveled and those on a bucket list --}}
+    <div id="trip-container" class="grid" >
         <div class= "column" id= "planned">
+            <div>
+                <h2>Dream Trips!</h2>
+            </div>
+
             <ul>
                 {{#each trips}}
                     {{#unless traveled}}
                         {{> trips/trip-block data=false}}
                     {{/unless}}
                 {{/each}}
+                {{trip_name}}
             </ul>
-            {{trip_name}}
         </div>
             
         <div id= "visited" class="column">
+            <div class="traveled">
+                <h2>Traveled!</h2>
+            </div>
+
+            <ul>
             {{traveled}}
             {{#each trips}}
-                    {{#unless traveled}}
+                    {{#if traveled}}
                         {{> trips/trip-block data=true}}
-                    {{/unless}}
+                    {{/if}}
                 {{/each}}
-
+            </ul>
         </div>
+
     </div>
-{{!-- {{/each}} --}}
-
-{{!-- 
-<div>
-<h2>Travel Goals!</h2>
-<div>
-
-</div>
-
-<h2>Places I've Traveled!</h2>
-
-<ul>
-    {{#each cats}}
-        {{#if traveled}}
-        {{> trips/trip-block data=true}}
-        {{/if}}
-    {{/each}}
-</ul>
-</div> --}}
-
 </body>
 
