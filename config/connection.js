@@ -3,7 +3,7 @@ const util= require("util");
 
 var connection = mysql.createConnection({
     // host is the location of your local server
-    host: "g8r9w9tmspbwmsyo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
+    host: "g8r9w9tmspbwmsyo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
     user:"cp9xwervbapyz968",
     password:"nvdvn5jnrv37nsy7",
