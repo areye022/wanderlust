@@ -3,11 +3,11 @@ const util= require("util");
 
 var connection = mysql.createConnection({
     // host is the location of your local server
-    host: "us-cdbr-east-02.cleardb.com",
+    host: "g8r9w9tmspbwmsyo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
     port: 3306,
-    user:"b01e171b246c91",
-    password:"460aaa3e",
-    database: "heroku_b50c6733891c7e8",
+    user:"cp9xwervbapyz968",
+    password:"nvdvn5jnrv37nsy7",
+    database: "s9w73gfwqkry2vk2",
 });
 
 connection.query = util.promisify(connection.query);
