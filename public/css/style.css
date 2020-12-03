@@ -49,4 +49,27 @@ form{
 
 .column {
     flex: 50%;
-    }
+}
+
+.main-container {
+    align-items: center;
+}
+
+.grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: #FD7676;
+    padding: 10px;
+    width:75%;
+    opacity: 75%;
+    border-radius: 22px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

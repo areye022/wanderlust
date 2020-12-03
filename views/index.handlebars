@@ -13,37 +13,33 @@
 
 <br>
 {{!-- columns for those traveled and those on a bucket list --}}
-    <div id="trip-container" class="grid" >
-        <div class= "column" id= "planned">
-            <div>
-                <h2>Dream Trips!</h2>
-            </div>
+<div class="grid-container">
+    <div class="grid-item">
+        
+        <h2>Dream Trips!</h2>
 
-            <ul>
-                {{#each trips}}
-                    {{#unless traveled}}
-                        {{> trips/trip-block data=false}}
-                    {{/unless}}
-                {{/each}}
+        <ul>
+            {{#each trips}}
+                {{#unless traveled}}
+                    {{> trips/trip-block data=false}}
+                {{/unless}}
+            {{/each}}
                 {{trip_name}}
-            </ul>
-        </div>
+        </ul>
+    </div>
+  <div class="grid-item">
+        
+        <h2>Traveled!</h2>
             
-        <div id= "visited" class="column">
-            <div class="traveled">
-                <h2>Traveled!</h2>
-            </div>
-
-            <ul>
+        <ul>
             {{traveled}}
             {{#each trips}}
                     {{#if traveled}}
                         {{> trips/trip-block data=true}}
                     {{/if}}
-                {{/each}}
-            </ul>
-        </div>
-
+            {{/each}}
+        </ul>
     </div>
-</body>
+</div>
 
+</body>
