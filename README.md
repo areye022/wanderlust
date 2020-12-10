@@ -1,5 +1,5 @@
 # Wanderlust Trips
-Doing Big Tings
+
 ### Deployed Application 
 
 ![Screenshot of wanderlust trips](./public/images/image1.JPG)
